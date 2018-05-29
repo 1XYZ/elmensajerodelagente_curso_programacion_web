@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EL MENSAJERO</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="indexcss.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <meta charset="utf-8">
+
+</head>
+<body>
+<section class="container-fluid index">
+</section>
+
+<nav class="img-fluid navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand active" href="index.html">Inicio</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link disabled" href="paginas/tecnologia.html">Tecnologia</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link disabled" href="paginas/deportes.html">Deportes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="paginas/salud.html">Salud</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link disabled" href="paginas/politica.html">Politica</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 ">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="buscar-pal" onkeyup="autocompletado()">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<script>
+    
+    function autocompletado () {
+            document.getElementById("demo").innerHTML = '';
+
+            var preguntas = [
+                "Politica",
+                "Salud",
+                "Deportes",
+                "Tecnologia",
+                "Inicio"
+
+            ];
+
+            var pal = document.getElementById("buscar-pal").value;
+            var tam = pal.length;
+            for(indice in preguntas){
+                var nombre = preguntas[indice];
+                var str = nombre.substring(0,tam);
+                if(pal.length <= nombre.length && pal.length != 0 && nombre.length != 0){
+                    if(pal.toLowerCase() == str.toLowerCase()){
+                        var node = document.createElement("LI");
+                        var textnode = document.createTextNode(preguntas[indice]);
+                        node.appendChild(textnode);
+                        document.getElementById("demo").appendChild(node);
+                    } else {
+            alert('no')
+          }
+                }
+            }
+        }
+</script>
+<!--ADENTRO-->
+<!--ADENTRO-->
+<section class="container">
+    <h1 class="shadow-lg p-3 mb-5 bg-white rounded  text-center display-3">
+        La noticia rapida y veraz, esta en tus manos.
+    </h1>
+    <h2 class="display-4 d-inline p-2 bg-primary text-white">
+        ULTIMAS NOTICIAS!!     ENTERATE.!!
+    </h2>
+
+
+    <span class="d-block p-2 bg-dark text-white mt-5 ">CHOQUE EN CUERNAVACA DEJA MUERTOS</span>
+
+    <figure class="figure mt-5">
+  <img src="imagen/notici1.jpg" class="figure-img img-fluid rounded" alt="choque de cuernavaca">
+  <figcaption class="figure-caption text-right">Autopista M&eacute;xico - Cuernavaca, CERRADA HASTA LAS 15:00 HORAS</figcaption>
+</figure>
+
+
+ <p class="mt-5">Cuernavaca.- La circulaci&oacute;n vehicular en la autopista M&eacute;xico-Cuernavaca permanece cerrada en ambas direcciones, y de acuerdo a las autoridades ser&aacute; liberada <strong>despu&eacute;s de las 15:00 horas,</strong> inform&oacute; la<strong> Coordinaci&oacute;n estatal de Protecci&oacute;n Civil.</strong></p>
+
+<p>El cierre inici&oacute; desde las 00:04 horas despu&eacute;s del choque entre un cami&oacute;n que transportaba cemento y un tractocami&oacute;n con semirremolque tipo tanque con<strong> carga de Gas LP.&nbsp;</strong></p>
+
+<p>El percance ocurri&oacute; en el kil&oacute;metr<strong>o 700+000 en direcci&oacute;n de sur a norte pero el caso mantiene ocupadas a m&aacute;s autoridades viales y de protecci&oacute;n civil porque el tractocami&oacute;n volc&oacute; tras el impacto y sufri&oacute; una abertura de aproximadamente 20 centímetros en la parte frontal</strong>. La colisi&oacute;n provoc&oacute; el desprendimiento de los dos remolques y uno de ellos gener&oacute; la fuga.</p>
+
+<p><strong>Protecci&oacute;n Civil</strong> estatal confirm&oacute; que no hay reportes de personas lesionadas, por lo que contin&uacute;an con las labores de atenci&oacute;n del incidente.</p>
+<p>La dependencia gubernamental precis&oacute; que se mantienen a la espera del arribo de la empresa de<strong> Gas LP para realizar el trasvase del producto.</strong></p>
+
+<p>Las autoridades mantienen su recomendaci&oacute;n de tomar la carretera federal hacia <strong>Tres Mar&iacute;as para incorporarse posteriormente a la autopista con rumbo a la Ciudad de M&eacute;xico, y para quienes viajan hacia Morelos se sugiere elegir la carretera federal y despu&eacute;s bajar por el municipio de Huitzilac.</strong></p>
+</div>
+   
+   <span class="d-block p-2 color1  text-black display-4">MATAN A UN SEÑOR Y ESTE NO SOBREVIVIO</span>
+
+<div class="media mt-5">
+  <img class="d-flex align-self-center mr-3 rounded float-left" src="imagen/ras.jpg" alt="Generic placeholder image">
+  <div class="media-body">
+    <p>Un nuevo <strong>episodio de racismo fue captado en video</strong> por una mujer en un <strong>restaurante de hamburguesas “Jack in The Box” </strong>en el <strong>sureste de Houston</strong>, cuando un cliente molesto con una <strong>empleada hispana del establecimiento le gritó diciéndole</strong>: “<strong>Te compro un boleto de vuelta a México”.</strong></p>
+    <p class="mb-0">Según la mujer que captó el video con su teléfono y lo colocó luego en las redes sociales, el cliente, un hombre anglosajón se enojó luego de tener que esperar a que la empleada verificara un cupón para una hamburguesa gratis.</p>
+  </div>
+</div>
+    
+    <div class="media mt-5">
+  <iframe class="d-flex align-self-center mr-3" allowfullscreen="true" allowtransparency="true" scrolling="no" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Flupita.rangel.54%2Fvideos%2F10204734125910495%2F&amp;show_text=0&amp;width=267" style="border:none;overflow:hidden" width="267" height="476" frameborder="0"></iframe>
+  <div class="media-body">
+    <p>"Oye, te van a despedir", dijo el cliente. "¿Cuál es tu nombre?". "María", respondió la empleada. "Adiós María. Te compro un boleto de vuelta a México", afirmó el cliente</p>
+    <p class="mb-0">La mujer que publicó el video comentó que "nunca pensó que iba a experimentar racismo tan cerca". Señaló que su hija de nueve años estaba aterrorizada al ver el incidente.</p>
+    <p class="mb-1">
+    Luego tuvo que hablar con su hija sobre el racismo y "por qué están sucediendo estas cosas".</p>
+    <p class="mt-5">El incidente ocurre dos semanas después de que otro airado cliente anglosajón atacó a trabajadores latinos que hablaban español en una cafetería de la ciudad de Nueva York.</p>
+  </div>
+</div>
+
+    <span class="display-4 d-block p-2 bg-dark text-white mt-5">LA SIERRA</span>
+
+
+    <div class="media mt-5">
+      <img class="d-flex align-self-center mr-3" src="imagen/i2.jpg" alt="Generic placeholder image">
+      <div class="media-body">
+      <h5 class="mt-0">“No le tengan miedo al cambio”</h5>
+      <p>*“Hoy en día los cambios y las alternancias son fenómenos necesarios para fomentar la democracia”, asegura.</p>
+      <p> *Destaca que el proyecto de Morena está integrado por personas honestas, decididas y con deseos de servir. </p>
+      <P>*Realizará gira por Valle Verde…</p>
+      <p class="mb-0">LEER...MAS</p>
+  </div>
+
+</div>
+    <ul class="list-unstyled">
+  <li class="media">
+    <img class="mr-3" src="imagen/i3.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Trabajan en unidad los candidatos priistas en la sierra gorda </h5>
+      En un intenso día de trabajo por la Sierra Gorda de Querétaro de la candidata del PRI al Senado, destacó el trabajo coordinado y en unión que realizan los candidatos de su partido en esta región del Estado. 
+    </div>
+  </li>
+  <li class="media my-4">
+    <img class="mr-3" src="imagen/i4.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Zoyapilca merece recuperar la unidad de su gente: Chely Amador </h5>
+      Jalpan de Serra, Qro. ”Después de lacampaña electoral que solo dura 45 días, todos volvemos a ser vecinos y amigos, yo los invito a que se mantengan unidos, a que se acaben las diferencias entre ustedes, que no…
+    </div>
+  </li>
+  <li class="media">
+    <img class="mr-3" src="imagen/i5.jpg" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Realizan gira en Pinal de Amoles David Palacios y Hugo Cabrera </h5>
+      El candidato a diputado federal por el primer distrito del Partido Revolucionario Institucional (PRI), David Palacios Montes, el diputado federal y coordinador de la campaña de José Antonio Meade en Querétaro, Hugo Cabrera y la candidata a diputada…
+    </div>
+  </li>
+</ul>
+   
+</section>
+
+
+
+
+
+<!-- Footer -->
+    <section class="index-link">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="link-area">
+                    <h3>CONTACTO</h3>
+                    <P>Contactanos si tienes algo importante que hablar con nosotros
+                    de lo contrario abstengace de mandarnos correo
+                gracias por su peferencia.</P>
+            <p>La informacion esta en tus manos!
+            Nos ubicamos en Pinal de amoles queretaro, col Centro "Gracias por tu preferencia"</P>
+
+                    <li class="btn btn-default"><a href="#"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+                    <li class="btn btn-default"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li class="btn btn-default"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="link-area">
+                    <h3>TIENDA</h3>
+                    <ul>
+                    <li><a href="#"> APP</a></li>
+                    <li><a href="#"> ESTACION DE RADIO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="link-area">
+                    <h3>Acerca de</h3>
+                    <ul>
+                    <li><a href="#"> INICIO</a></li>
+                    <li><a href="#"> DEPORTES</a></li>
+                    <li><a href="#"> POLITICA</a></li>
+                    <li><a href="#"> TECNOLOGIA</a></li>
+                    <li><a href="#"> SALUD</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="link-area">
+                    <h3>Acerca de</h3>
+                    <ul>
+                    <li><a href="#"> INICIO</a></li>
+                    <li><a href="#"> DEPORTES</a></li>
+                    <li><a href="#"> POLITICA</a></li>
+                    <li><a href="#"> TECNOLOGIA</a></li>
+                    <li><a href="#"> SALUD</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+
+
+
+
+-->
+
+
+</body>
+</html>
